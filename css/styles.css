@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font: 15px/1.5"Open Sans", Arial, sans-serif;
+    font: 18px/1.5 "Open Sans", Arial, sans-serif;
     color: #2d3c49;
 }
 
@@ -20,18 +20,14 @@ h5 {
     margin: 0;
 }
 
-img {
+.img-items {
     width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
 }
-a {
-    min-width: 50px;
-    min-height: 50px;
-}
+
 a:link {
     text-decoration: none;
     color: #2d3c49;
+    line-height: 1.8;
 }
 
 a:visited {
@@ -58,7 +54,7 @@ ul {
 /* Header */
 .header {
     padding: 1rem;
-    border-bottom: 3px solid #7d97ad;
+    border-bottom: 1px solid #7d97ad;
     margin-bottom: 1rem;
 }
 
@@ -67,17 +63,14 @@ ul {
     text-align: center;
 }
 
-.my-logo {
-    width: 65px;
-    height: 65px;
-    margin: 0 0 5px;
-}
-
 .header-name,
 .header-job {
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
+.header-job {
+    font-weight: 400;
+}
 
 /* Content Area */
 .content {
@@ -132,4 +125,37 @@ footer {
     min-width: 50px;
     min-height: 50px;
     margin: 0 5px;
+    line-height: 1.8;
+}
+
+
+/* responsive */
+@media screen and (min-width: 500px) {
+    .header-content {
+        display: flex;
+    }
+    
+    .logo-container {
+        flex: 0 0 130px;
+        text-align: start;
+    }
+
+    .my-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .header-name,
+    .header-job {
+        text-align: end;
+    }
+
+    .header-name {
+        font-size: 3em;
+    }
+
+    .header-job {
+        font-size: 1.4em;
+    }
 }

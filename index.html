@@ -14,9 +14,23 @@
     <!-- Logo, name, and job  -->
     <header class="header">
         <div class="header-content">
-            <img src="img/mobile-65px.svg" class="my-logo"  alt="logo">
-            <h1 class="header-name">ROBERT LEU</h1>
-            <h5 class="header-job">FRONT-END DEVELOPER</h5>
+            <div class="logo-container">
+                <img srcset="img/mobile-65px.svg 65w,
+                            img/medium-90px.svg 90w,
+                            img/large-115px.svg 115w"
+                     sizes="(max-width: 499px) 65px,
+                            (max-width: 768px) 90px,
+                            115px"
+                     src="img/mobile-65px.svg" alt="logo">
+            </div>
+            <div class="my-container">
+                <div class="name-container">
+                    <h1 class="header-name">ROBERT LEU</h1>
+                </div>
+                <div class="job-container">
+                    <h4 class="header-job">FRONT-END DEVELOPER</h4>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -24,7 +38,7 @@
     <main>
         <section class="content"> <!-- flex -->
             <section class="splash">
-                <img src="img/mobile-splash-360px.jpg">
+                <img class="img-items" src="img/mobile-splash-360px.jpg">
             </section>
             <section class="portfolio-heading">
                 <h2 class="work-heading">Featured Work</h2>
@@ -32,22 +46,22 @@
             <!-- Portfolio work -->                                                                                                                                        
             <section class="portfolio-items">
                 <div class="p-item">
-                    <img src="img/mobile-splash-360px.jpg">
+                    <img class="img-items" src="img/mobile-splash-360px.jpg">
                     <h3>Animal Trading Card</h3>
                     <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
                 </div>
                 <div class="p-item">
-                    <img src="img/mobile-splash-360px.jpg">
+                    <img class="img-items" src="img/mobile-splash-360px.jpg">
                     <h3>Pixel Art Maker</h3>
                     <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
                 </div>
                 <div class="p-item">
-                    <img src="img/mobile-splash-360px.jpg">
+                    <img class="img-items" src="img/mobile-splash-360px.jpg">
                     <h3>Animal Trading Card</h3>
                     <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
                 </div>
                 <div class="in-progress">
-                    <img src="img/mobile-splash-360px.jpg">
+                    <img class="img-items" src="img/mobile-splash-360px.jpg">
                     <h3>Animal Trading Card</h3>
                     <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
                 </div>
@@ -58,9 +72,21 @@
     <!-- Footer - Links to connect with me. -->
     <footer>
         <ul>
-            <li class="social-media"><i class="fab fa-linkedin fa-3x"></i></li>
-            <li class="social-media"><i class="fab fa-git-square fa-3x"></i></li>
-            <li class="social-media"><i class="fab fa-facebook fa-3x"></i></li>
+            <li class="social-media">
+                <a href="https://www.linkedin.com/in/robert-leu-dev">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                </li>
+            <li class="social-media">
+                <a href="https://github.com/rleu82">
+                    <i class="fab fa-git-square fa-3x"></i>
+                </a>
+            </li>
+            <li class="social-media">
+                <a href="https://www.facebook.com/robert.leu.3">
+                    <i class="fab fa-facebook fa-3x"></i>
+                </a>
+            </li>
         </ul>
     </footer>
 

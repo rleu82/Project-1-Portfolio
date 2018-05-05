@@ -83,3 +83,29 @@ ul {
     margin: 0 10px;
     text-transform: uppercase;
 }
+
+/* splash */
+.splash {
+    width: 100%;
+    min-width: 360px;
+    min-height: 400px;
+    position: relative;
+    background: url("../img/desk-(360)400x267.jpg") no-repeat;
+}
+
+.splash-content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.349);
+    left: 5%;
+    top: 5%;
+    padding: 2em;
+    color: #fff;
+}
+
+.intro-title {
+    font-size: 2em;
+}
+
+.intro-text {
+    font-size: 1.2em;
+}

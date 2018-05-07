@@ -12,19 +12,17 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="header-content">
-            <div class="logo">
-                <img src="img/rdev-70px.svg" alt="logo">
-            </div>
-            <div class="nav-container fill">
-                <nav class="nav">
-                    <ul>
-                        <li class="nav-points"><a href="#">Pens</a></li>
-                        <li class="nav-points"><a href="#">Projects</a></li>
-                        <li class="nav-points"><a href="#">Connect</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="logo">
+            <img src="img/rdev-70px.svg" alt="logo">
+        </div>
+        <div class="nav-container">
+            <nav class="nav">
+                <ul>
+                    <li class="nav-points"><a href="#">Pens</a></li>
+                    <li class="nav-points"><a href="#">Projects</a></li>
+                    <li class="nav-points"><a href="#">Connect</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!--main content-->
@@ -38,9 +36,33 @@
             </section>
             <!-- Separate flex sections for codepen and projects. Pens quick cards, portfolio descriptive cards -->
             <!-- code pen -->
-            <div class="portfolio-heading"><h3>Pens</h3></div>
+            <div class="portfolio-heading"><h2>Pens</h2></div>
             <section id="pens" class="portfolio-items">
-                <div class="p-item">
+                <div class="pen-item">
+                    <div class="card"> <!-- wrapper for each item. Card border-->
+                        <img class="fill" src="img/mobile-splash-360px.jpg">
+                        <article class="description">
+                            <h3>Animal Trading Card</h3>
+                            <p>Created a trading card using Ice Bear from We Bare Bears. Used: HTML/CSS</p>
+                            <span>View Pen: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="pen-item">
+                    <div class="card"> <!-- wrapper for each item. Card border-->
+                        <img class="fill" src="img/mobile-splash-360px.jpg">
+                        <article class="description">
+                            <h3>Pixel Art Maker</h3>
+                            <p>Used Bootstrap to create a simple Pixel Art Maker.</p>
+                            <span>View Pen : </span><a href="https://codepen.io/anon/pen/deVKdp">Codepen</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- projects -->
+            <div class="portfolio-heading"><h2>Projects</h2></div>
+            <section id="projects" class="portfolio-items">
+                <div class="proj-item">
                     <div class="card">
                         <img class="fill" src="img/mobile-splash-360px.jpg">
                         <article class="description">
@@ -50,29 +72,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="p-item">
-                    <img class="p-preview" src="img/mobile-splash-360px.jpg">
-                    <h3>Pixel Art Maker</h3>
-                    <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
-                </div>
-                <div class="p-item">
-                    <img class="p-preview" src="img/mobile-splash-360px.jpg">
-                    <h3>Animal Trading Card</h3>
-                    <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
-                </div>
-            </section>
-            <!-- projects -->
-            <div class="portfolio-heading"></div>
-            <section id="projects" class="portfolio-items">
-                <div class="p-item">
-                    <img class="fill" src="img/mobile-splash-360px.jpg">
-                    <article class="description">
-                        <h3>Animal Trading Card</h3>
-                        <p>Description</p>
-                        <span>View: </span><a href="https://codepen.io/Rleu/pen/GQjEVV">Codepen</a>
-                    </article>
-                </div>
-                <div class="p-item">
+                <div class="proj-item">
                     <img class="fill" src="img/mobile-splash-360px.jpg">
                     <article class="description">
                         <h3>Animal Trading Card</h3>
@@ -89,17 +89,17 @@
         <ul>
             <li class="social-media">
                 <a href="https://www.linkedin.com/in/robert-leu-dev">
-                     <i class="fab fa-linkedin fa-3x"></i>
+                     <i class="fab fa-linkedin fa-2x"></i>
                 </a>
             </li>
             <li class="social-media">
                 <a href="https://github.com/rleu82">
-                    <i class="fab fa-git-square fa-3x"></i>
+                    <i class="fab fa-git-square fa-2x"></i>
                 </a>
             </li>
             <li class="social-media">
                 <a href="https://www.facebook.com/robert.leu.3">
-                    <i class="fab fa-facebook fa-3x"></i>
+                    <i class="fab fa-facebook fa-2x"></i>
                 </a>
             </li>
         </ul>

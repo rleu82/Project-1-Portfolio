@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font: 18px/1.2 "Lato", Arial, sans-serif;
+    font: 16px/1.2 "Lato", Arial, sans-serif;
     color: #2d3c49;
 }
 
@@ -71,23 +71,15 @@ ul {
     padding: 0.5rem;
 }
 
-.header-content {
-    display: flex;
-    flex-direction: column;
-}
-
 .logo {
-    flex: 0 0 70px;
     text-align: center;
 }
 
 .nav-container {
-    flex: 1 100%;
     margin: 5px 0;
 }
 
 .nav {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -132,24 +124,48 @@ ul {
 
 
 /* portfolio */
+.portfolio-heading {
+    margin-top: 2em;
+    text-align: center;
+}
 .portfolio-items {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.p-item {
-    width: 100%;
+.pen-item {
+    flex: 1 0 100%;
     padding: 2em;
-    height: 100%;
 }
+
+.proj-item {
+    flex: 1 0 100%;
+    padding: 2em;
+}
+
 .card {
-    width: 100%;
     border: 1px solid #dddddd;
 }
 
 .description { 
     padding: 1em;
-    
+    text-align: center;
 }
-.p-preview {
+
+
+/* footer */
+footer {
     width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #dddddd;
+}
+
+.social-media {
+    display: inline-block;
+    min-width: 45px;
+    margin: 0 5px;
+}
+i {
+    line-height: 2em;
 }

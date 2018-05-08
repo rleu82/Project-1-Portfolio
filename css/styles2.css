@@ -108,7 +108,7 @@ ul {
     box-sizing: border-box;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.349);
-    top: 20px;
+    top: 20%;
     width: 100%;
     padding: 1.5em;
     color: #fff;
@@ -133,33 +133,43 @@ ul {
     flex-wrap: wrap;
 }
 
+.pen-item-img {
+    max-height: 200px;
+}
+
 .pen-item {
     flex: 1 0 100%;
-    padding: 2em;
+    padding: 1.5em;
+}
+
+.proj-item-img {
+    max-height: 225px;
 }
 
 .proj-item {
     flex: 1 0 100%;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 .card {
     border: 1px solid #ddd;
+    height: 100%;
 }
 
 .description { 
     padding: 1em;
     text-align: center;
-    height: 180px;
 }
 
 
 /* footer */
 footer {
+    margin-top: 2em;
     width: 100%;
     text-align: end;
     padding: 1rem 1rem;
     background: #e6e6e6;
+    text-align: center;
 }
 
 .social-media {
@@ -171,20 +181,77 @@ footer {
 
 
 @media screen and (min-width: 577px) {
+    .splash {
+        width: 100%;
+        min-height: 380px;
+        position: relative;
+        background: url("../img/desk-(576)600x400.jpg") no-repeat;
+        background-size: cover;
+    }
+
     .pen-item {
         flex: 1 0 50%;
         padding: 1em;
     }
+
+    .pen-item-img {
+        max-height: 250px;
+    }
     
-    .proj-item {
-        flex: 1 0 50%;
-        padding: 2em;
+    .proj-item-img {
+        max-height: 300px;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .splash {
+        width: 100%;
+        min-height: 450px;
+        position: relative;
+        background: url("../img/desk-(768)800x534.jpg") no-repeat;
+        background-size: cover;
+    }
+
     .pen-item {
         flex: 1 0 33.33%;
         padding: 1em;
+    }
+
+    .proj-item {
+        flex: 1 0 50%;
+        padding: 1em;
+    }
+
+    .splash-content {
+        text-align: center;
+    }
+
+    .pen-item-img {
+        max-height: 300px;
+    }
+    .proj-item-img {
+        max-height: 325px;
+        overflow: hidden;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .splash {
+        width: 100%;
+        min-height: 500px;
+        position: relative;
+        background: url("../img/desk-(1200)1500x1001.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .pen-item {
+        padding: 2em;
+    }
+
+    .proj-item {
+        padding: 2em;
+    }
+    .proj-item-img {
+        max-height: 350px;
     }
 }

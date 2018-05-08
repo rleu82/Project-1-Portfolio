@@ -144,28 +144,47 @@ ul {
 }
 
 .card {
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
 }
 
 .description { 
     padding: 1em;
     text-align: center;
+    height: 180px;
 }
 
 
 /* footer */
 footer {
     width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    border-top: 1px solid #dddddd;
+    text-align: end;
+    padding: 1rem 1rem;
+    background: #e6e6e6;
 }
 
 .social-media {
     display: inline-block;
     min-width: 45px;
+    min-height: 45px;
     margin: 0 5px;
 }
-i {
-    line-height: 2em;
+
+
+@media screen and (min-width: 577px) {
+    .pen-item {
+        flex: 1 0 50%;
+        padding: 1em;
+    }
+    
+    .proj-item {
+        flex: 1 0 50%;
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pen-item {
+        flex: 1 0 33.33%;
+        padding: 1em;
+    }
 }

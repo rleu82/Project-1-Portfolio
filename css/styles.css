@@ -100,7 +100,7 @@ ul {
     width: 100%;
     min-height: 265px;
     position: relative;
-    background: url("../img/desk-(360)400x267.jpg") no-repeat;
+    background: url("../img/desk-(360)400x267.jpg") no-repeat; /* image from pexel.com, no attribution needed to use on website */
     background-size: cover;
 }
 

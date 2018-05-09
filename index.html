@@ -16,9 +16,10 @@
             <img src="img/rdev-70px.svg" alt="logo">
         </div>
         <div class="nav-container">
+            <!--nav might not be needed now but as I add work, it would be easier to navigate.-->
             <nav class="nav">
                 <ul>
-                    <li class="nav-points"><a href="#pens">Pens</a></li>
+                    <li class="nav-points"><a href="#pens">Pens</a></li> 
                     <li class="nav-points"><a href="#projects">Projects</a></li>
                     <li class="nav-points"><a href="#footer">Connect</a></li>
                 </ul>
@@ -28,18 +29,18 @@
     <!--main content-->
     <main>
         <section class="content">
-            <section class="splash">
+            <section class="splash"> <!-- changes pictures with each break point to higher resolution -->
                 <div class="splash-content">
                     <h1 class="intro-title">My name is Robert.</h1>
-                    <p class="intro-text">I love to create.</p>
+                    <p class="intro-text">I am a developer. I love to create.</p>
                 </div>
             </section>
             <!-- Separate flex sections for codepen and projects. Pens quick cards, portfolio descriptive cards -->
             <!-- code pen -->
             <div class="portfolio-heading"><h2>Pens</h2></div>
             <section id="pens" class="portfolio-items">
-                <div class="pen-item">
-                    <div class="card"> <!-- wrapper for each item. Card border-->
+                <div class="pen-item"> <!-- each new codepen item will follow same structure as contained in this div -->
+                    <div class="card"> <!-- wrapper for each item. Card border -->
                         <img class="fill pen-item-img" src="img/animalcard.png" alt="Animal Card">
                         <article class="description">
                             <h3>Animal Trading Card</h3>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
                 <div class="pen-item">
-                    <div class="card"> <!-- wrapper for each item. Card border-->
+                    <div class="card">
                         <img class="fill pen-item-img" src="img/pixelart.png" alt="Pixel Art">
                         <article class="description">
                             <h3>Pixel Art Maker</h3>
@@ -58,8 +59,9 @@
                         </article>
                     </div>
                 </div>
+                <!-- third work is present as placeholder to show how the page will feel at full width -->
+                <!-- TODO: Replace with real project. This was to show structure of the responsive portion dealing with codepen work.-->
                 <div class="pen-item">
-                    <div class="card"> <!-- wrapper for each item. Card border-->
                         <img class="fill pen-item-img" src="img/placeholder.png" alt="Place Holder">
                         <article class="description">
                             <h3>Place Holder</h3>
@@ -72,7 +74,8 @@
             <!-- projects -->
             <div class="portfolio-heading"><h2>Projects</h2></div>
             <section id="projects" class="portfolio-items">
-                <div class="proj-item">
+                <!-- this div starts and end the structure for Project items. breakpoints are 1 above code pens. breaks to 50% width only -->
+                <div class="proj-item"> 
                     <div class="card">
                         <img class="fill proj-item-img" src="img/gd.jpg" alt="Golden Dragon">
                         <article class="description">
@@ -82,7 +85,9 @@
                         </article>
                     </div>
                 </div>
-                <div class="proj-item">
+                <!-- place holder for project to show breakpoint if I have more work to display. -->
+                <!-- TODO: Temporary only before going live. This was used to display look of breakpoints.-->
+                <div class="proj-item"> 
                     <div class="card">
                         <img class="fill proj-item-img" src="img/placeholder.png" alt="Place holder">
                         <article class="description">
